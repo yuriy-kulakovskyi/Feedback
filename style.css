@@ -1,0 +1,117 @@
+* {
+  padding: 0; margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+h4,
+p {
+  color: #333;
+}
+
+#wrapp1 h4 {
+  width: 40%;
+}
+
+#wrapp2 h4 {
+  width: 50%;
+}
+
+body {
+  width: 100%; height: 100vh;
+  background-color: wheat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#wrapp1 {
+  width: 45%; height: 45%;
+  background-color: #fff;
+  box-shadow: 0 0 3px #000;
+  border-radius: 4px;
+  display: flex;
+  text-align: center;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+}
+
+.smile {
+  font-size: 45px;
+}
+
+.box:hover {
+  box-shadow: 0 0 3px #333;
+  padding: 15px;
+}
+
+.boxes {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 80%;
+}
+
+.box {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+#btn {
+  background-color: #333;
+  border: none;
+  color: #fff;
+  box-shadow: 0 0 3px #333;
+  width: 25%;
+  height: 5vh;
+  cursor: pointer;
+}
+
+#btn:hover {
+  background-color: #000;
+  margin-top: 5px;
+}
+
+#wrapp2 {
+  width: 45%; height: 45%;
+  background-color: #fff;
+  box-shadow: 0 0 3px #000;
+  border-radius: 4px;
+  display: none;
+  text-align: center;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+}
+
+#heart {
+  animation-name: pulse;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes pulse {
+  0% {
+    font-size: 45px;
+  }
+
+  25% {
+    font-size: 65px;
+  }
+
+  50% {
+    font-size: 45px;
+  }
+
+  75% {
+    font-size: 65px;
+  }
+
+  100% {
+    font-size: 45px;
+  }
+}
